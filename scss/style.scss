@@ -1,0 +1,33 @@
+@import './base/variables';
+@import './base/extend';
+
+
+@import './sections/header';
+@import './sections/footer';
+@import './sections/main';
+
+/* receteo y estilos globales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.bg-principal {
+    background: $bg-primary;
+    
+    @media screen and (max-width: 768px) {
+        background: $bg-second;
+        
+    }
+}
+/* fin estilos globales */
+
+
+
+

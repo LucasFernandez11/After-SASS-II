@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 48px;
+  color: #252222;
+  display: inline;
+}
+
+/* estilos header */
+.header .nav {
+  padding: 30px 0;
+}
+
+.nav-link {
+  font-size: 18px;
+}
+
+/* fin header */
+/* estilos footer */
+.footer {
+  margin-top: auto;
+}
+
+/* fin estilos footer */
+/* estilos main */
+/*! galeria */
+#galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#galeria img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+/*! fin galeria  */
+/*! tirando magia de css */
+/* aplico transicion */
+h1 span {
+  transition: 0.5s linear;
+}
+
+/* paso por encima del H1 y selecciono el primer hijo */
+h1:hover span:nth-child(1) {
+  margin-right: 5px;
+}
+
+/* agrego la pseudoclase ::after para cuando termino de pasar */
+/** la propiedad content agrega un contenido extra */
+h1:hover span:nth-child(1):after {
+  content: "'";
+}
+
+/* selecciono al segundo hijo y lo muevo 30px */
+h1:hover span:nth-child(2) {
+  margin-right: 30px;
+}
+
+/* le doy una sompra al texto dentro de todos los span */
+h1:hover span {
+  /* declaro el color principal para los span y poder agregar sombra*/
+  color: #fff;
+  /* propiedad text-shadow: agrego sombra horizontal, vertica, blur y por ultimo color */
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+/*! fin de la magia */
+/* fin estilos main */
+/* receteo y estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.bg-principal {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.697) 0%, #c3c3c3f6 100%);
+}
+@media screen and (max-width: 768px) {
+  .bg-principal {
+    background: linear-gradient(90deg, #2e0826 0%, #790962 62%, rgba(11, 28, 97, 0.6082808123) 100%);
+  }
+}
+
+/* fin estilos globales */
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+//extend
+%title-primary {
+   font-family: $font-typo-tile; 
+   font-size: $font-size-title;
+   color: $font-color-title;
+   display: $display-title;
+}
+
+//mixin
+
+@mixin titulo-primario {
+   @extend %title-primary;
+ 
+}
